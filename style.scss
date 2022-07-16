@@ -19,7 +19,7 @@ body
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: var(--dark);
+    background-color: var(--light);
 
     .switcher
     {
@@ -37,8 +37,19 @@ body
             width: 85px;
             height: 85px;
             border-radius: 50px;
-            background-color: #530d6c;
+            background-color: #ffffff;
             cursor: pointer;
+            transition: transform 0.25s linear;
+        }
+
+        .dark
+        {
+            transform: translateX(171px);
+        }
+
+        .white
+        {
+            transform: translateX(0);
         }
     }
 }
